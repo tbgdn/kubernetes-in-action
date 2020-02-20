@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubia-liveness
+  namespace: kubia-ch04
+spec:
+  containers:
+    - name: kubia
+      image: luksa/kubia-unhealthy
+      livenessProbe:
+        httpGet:
+          port: 8080
+          path: /
+        initialDelaySeconds: 15
