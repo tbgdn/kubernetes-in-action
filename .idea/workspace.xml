@@ -2,18 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48ad15de-c7af-494f-ac8a-3cf7709067e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch04/chapter-namespace.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/exporter.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/kubia-deamonsets.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/kubia-liveness-probe.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/kubia-rc.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/kubia-replicaset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/external-service-endpoints.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/external-service-externalname.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/external-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/images/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/images/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/images/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/namespace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/pods.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/svc-loadbalancer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/svc-nodeport.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch05/svc.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +77,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Playground\Kubernetes\kubia\ch05\images" />
+    </key>
+  </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
@@ -79,8 +105,16 @@
       <option name="presentableId" value="Default" />
       <updated>1581892530905</updated>
       <workItem from="1581892536102" duration="2599000" />
-      <workItem from="1582152398905" duration="4134000" />
+      <workItem from="1582152398905" duration="18233000" />
     </task>
+    <task id="LOCAL-00001" summary="Finished chapter 04">
+      <created>1582227672557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582227672557</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,13 +136,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished chapter 03" />
     <MESSAGE value="Remove project files from ignore list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove project files from ignore list" />
+    <MESSAGE value="Finished chapter 04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished chapter 04" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="405" y="13" key="CommitChangelistDialog2" timestamp="1582058959008">
+    <state x="529" y="224" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582235607855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="405" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582058959008" />
+    <state x="529" y="224" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582235607855" />
+    <state x="405" y="13" key="CommitChangelistDialog2" timestamp="1582227671837">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="405" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582227671837" />
     <state x="557" y="128" key="RollbackChangesDialog" timestamp="1582058706771">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -125,5 +164,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582152402647" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1582236299981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582236299981" />
   </component>
 </project>

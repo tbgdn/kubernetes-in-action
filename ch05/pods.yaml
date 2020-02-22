@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: kubia
+  namespace: ch05
+spec:
+  replicas: 3
+  selector:
+    matchExpressions:
+      - key: app
+        operator: In
+        values:
+          - kubia
+  template:
+    metadata:
+      labels:
+        app: kubia
+    spec:
+      containers:
+        - name: kubia
+          image: tbgdn/kubia
+          imagePullPolicy: Always
+          readinessProbe:
+            exec:
+              command:
+                - ls
+                - /var/ready
+          ports:
+            - containerPort: 8080
+              name: http
+            - containerPort: 8443
+              name: https
