@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gitrepo-volume-pod
+  namespace: ch06
+spec:
+  containers:
+    - image: nginx:alpine
+      name: web-server
+      volumeMounts:
+        - mountPath: /usr/share/nginx/html
+          name: html
+          readOnly: true
+      ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
+  volumes:
+    - name: html
+      gitRepo:
+        repository: https://github.com/luksa/kubia-website-example.git
+        revision: master
+        directory: .

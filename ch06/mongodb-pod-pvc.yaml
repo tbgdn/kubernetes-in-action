@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mongodb-pvc
+  namespace: ch06
+spec:
+  containers:
+    - name: mongodb
+      image: mongo
+      volumeMounts:
+        - mountPath: /data/db
+          name: mongodb-data
+      ports:
+        - containerPort: 27017
+          protocol: TCP
+  volumes:
+    - name: mongodb-data
+      persistentVolumeClaim:
+        claimName: mongodb-pvc

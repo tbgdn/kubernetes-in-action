@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48ad15de-c7af-494f-ac8a-3cf7709067e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch05/external-service-endpoints.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/external-service-externalname.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/external-service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/images/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/images/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/images/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/ingress.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/namespace.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/pods.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/svc-headless.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/svc-loadbalancer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/svc-nodeport.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/fortune-nodeport.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/fortune-pod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/gitrepo-volume-pod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/mongodb-pod-hostpath.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/mongodb-pod-pvc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/mongodb-pv-hostpath.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/mongodb-pvc-dp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/mongodb-pvc-hostpath.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/namespace.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch06/storageclass-fast-hostpath.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ch06" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,6 +75,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Playground\Kubernetes\kubia\ch06" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspace\Playground\Kubernetes\kubia\ch05\images" />
     </key>
@@ -105,7 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581892530905</updated>
       <workItem from="1581892536102" duration="2599000" />
-      <workItem from="1582152398905" duration="18233000" />
+      <workItem from="1582152398905" duration="26333000" />
+      <workItem from="1582391607253" duration="2462000" />
     </task>
     <task id="LOCAL-00001" summary="Finished chapter 04">
       <created>1582227672557</created>
@@ -114,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582227672557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished chapter 05">
+      <created>1582363684208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582363684208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,17 +145,22 @@
     <MESSAGE value="Finished chapter 03" />
     <MESSAGE value="Remove project files from ignore list" />
     <MESSAGE value="Finished chapter 04" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished chapter 04" />
+    <MESSAGE value="Finished chapter 05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished chapter 05" />
   </component>
   <component name="WindowStateProjectService">
     <state x="529" y="224" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582235607855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="529" y="224" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582235607855" />
-    <state x="405" y="13" key="CommitChangelistDialog2" timestamp="1582227671837">
+    <state x="405" y="13" key="CommitChangelistDialog2" timestamp="1582363683405">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="405" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582227671837" />
+    <state x="405" y="13" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582363683405" />
+    <state x="148" y="72" key="DiffContextDialog" timestamp="1582363674136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="148" y="72" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1582363674136" />
     <state x="557" y="128" key="RollbackChangesDialog" timestamp="1582058706771">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -156,14 +169,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="281" y="59" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582154493058" />
-    <state x="362" y="150" key="Vcs.Push.Dialog.v2" timestamp="1582058780080">
+    <state x="362" y="150" key="Vcs.Push.Dialog.v2" timestamp="1582363686919">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582058780080" />
-    <state x="478" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1582152402647">
+    <state x="362" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1582363686919" />
+    <state x="478" y="242" key="com.intellij.ide.util.TipDialog" timestamp="1582391622051">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="478" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582152402647" />
+    <state x="478" y="242" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582391622051" />
     <state x="431" y="145" key="search.everywhere.popup" timestamp="1582236299981">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
